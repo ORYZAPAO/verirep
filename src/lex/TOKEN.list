@@ -1,0 +1,94 @@
+#--------------------------------------------------
+# Keyword
+#--------------------------------------------------
+@BASED 1100
+
+## 
+always                K_ALWAYS
+module                K_MODULE
+endmodule             K_ENDMODULE
+
+## Module Item
+parameter             K_PARAMETER
+input                 K_INPUT
+output                K_OUTPUT
+inout                 K_INOUT                   
+wire                  K_NET_WIRE
+tri                   K_NET_TRI
+tri1                  K_NET_TRI1
+supply0               K_NET_SUPPLY0
+wand                  K_NET_WAND
+triand                K_NET_TRIAND
+tri0                  K_NET_TRI0
+supply1               K_NET_SUPPLY1
+wor                   K_NET_WOR
+trior                 K_NET_TRIOR
+trireg                K_NET_TRIREG
+reg                   K_REG
+integer               K_INTEGER
+real                  K_REAL
+event                 K_EVENT
+# (Not Support) <gate_declaration>  and  nand  or  nor xor  xnor buf  bufif0 bufif1  not  notif0 notif1  pulldown pullup
+#	                            nmos  rnmos pmos rpmos cmos rcmos   tran rtran  tranif0  rtranif0  tranif1 rtranif1
+# (Not Support) <UDP_instantiation>
+# (Not Support) <module_instantiation>
+# (Not Support) <parameter_override>
+# (Not Support) <continuous_assign>
+# (Not Support) <specify_block>
+# (Not Support) <initial_statement>
+# (Not Support) <always_statement>
+# (Not Support) <initial_statement>
+# (Not Support) <always_statement>
+# (Not Support) <task>
+# (Not Support) <function>
+"//"                 K_SHORT_COMMENT
+"/*"                 K_L_LONG_COMMENT
+"*/"                 K_R_LONG_COMMENT
+
+assign 
+
+#--------------------------------------------------
+# Symbol
+#--------------------------------------------------
+@BASED 1200
+","                   K_COMMA
+":"                   K_COLON
+";"                   K_SEMICOLON
+"["                   K_L_SQR_BRACKET
+"]"                   K_R_SQR_BRACKET
+"("                   K_L_BRACKET
+")"                   K_R_BRACKET
+"{"                   K_L_BRACE
+"}"                   K_R_BRACE
+"@"                   K_ATMARK
+"+"                   K_PLUS
+"-"                   K_MINUS
+"*"                   K_ASTERIK
+"/"                   K_SLASH
+"!"                   K_EXCLAMATION
+"~&"                  K_TILDE_AMPERSAND
+"~"                   K_TILDE
+"&"                   K_AMPERSAND
+"|"                   K_VERTICALLINE
+"^|"                  K_CARET_VERTICALLINE
+"~^"                  K_TILDE_CARET
+"^"                   K_CARET
+"%"                   K_PERCENT
+"="                   K_DOUBLEHYPHEN
+"!="                  K_EXCLAMATION_DOUBLEHYPHEN
+"=="                  K_DOUBLE_DOUBLEHYPHEN
+"==="                 K_TRIPLE_DOUBLEHYPHEN
+"!=="                 K_EXCLAMATION_DOUBLE_DOUBLEHYPHEN
+"&&"                  K_DOUBLE_AMPERSAND
+"||"                  K_DOUBLE_VERTICALLINE
+### "<"
+### "<="
+### ">"
+### ">="
+### ">>"  
+### "<<"
+
+[0-9][0-9]*           K_NUMBER
+
+[a-zA-Z][0-9a-zA-Z]*  K_STRING
+
