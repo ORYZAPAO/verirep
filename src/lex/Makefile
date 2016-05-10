@@ -1,13 +1,13 @@
 TOKEN_LIST       = TOKEN.list
 
-TOKEN_ID_HEADER  = ../verilog_token.h
+TOKEN_ID_HEADER  = verilog_token.h
 FLEX_FILE        = flex.lex
 
 PRE_TARGET       = pre_verilog_lexer.cpp
-HEADER_FLEX_FILE = ../verilog_lexer.h
+HEADER_FLEX_FILE = verilog_lexer.h
 
-TARGET_WINDOWS   = ../verilog_lexer_windows.cpp
-TARGET_MACOS     = ../verilog_lexer_macos.cpp
+TARGET_WINDOWS   = verilog_lexer_windows.cpp
+TARGET_MACOS     = verilog_lexer_macos.cpp
 
 
 
@@ -16,6 +16,8 @@ $(TARGET_WINDOWS) : $(PRE_TARGET) header.lex
 	@echo '...Add  #include "stdafx.h"'
 	cat header.lex  $(PRE_TARGET) > $(TARGET_WINDOWS)
 	cp              $(PRE_TARGET) $(TARGET_MACOS)
+	@echo "copy..."
+
 
 ##
 ## 1) TOKEN.list -->  flex.lex ................. Flex File
