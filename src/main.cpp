@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char *argv[]){
   void usage();
 
-  usage();
+   usage();
   
 
   FlexLexer* lexer = new yyFlexLexer();
