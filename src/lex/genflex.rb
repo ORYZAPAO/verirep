@@ -35,6 +35,7 @@ class GenFlex
 %{
 
 #include <iostream>
+//#include "../include/verilog_token.h"
 #include "verilog_token.h"
 
 %}
